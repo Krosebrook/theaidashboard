@@ -88,10 +88,6 @@ const DeploymentCenter: React.FC = () => {
           </div>
         </div>
       )}
-          <Rocket className="w-5 h-5" />
-          Deploy to All Platforms
-        </button>
-      </div>
 
       <div className="grid grid-cols-2 gap-8 mb-8">
         {platforms.map(platform => (

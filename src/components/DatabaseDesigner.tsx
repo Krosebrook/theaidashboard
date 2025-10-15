@@ -303,7 +303,7 @@ const DatabaseDesigner: React.FC = () => {
           </div>
 
           <div className="space-y-2">
-            <button 
+            <button
               onClick={async () => {
                 const result = await executeQuery(selectedQuery);
                 setQueryResult(result);
@@ -312,8 +312,6 @@ const DatabaseDesigner: React.FC = () => {
               className="w-full p-3 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 disabled:from-gray-400 disabled:to-gray-500 text-white rounded-lg font-medium"
             >
               {isExecuting ? 'Executing...' : 'Execute Query'}
-            </button>
-              Execute Query
             </button>
             <button className="w-full p-2 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg text-sm">
               Optimize Query

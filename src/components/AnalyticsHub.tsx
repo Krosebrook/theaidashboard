@@ -69,8 +69,6 @@ const AnalyticsHub: React.FC = () => {
                 <div className="text-sm text-gray-600 capitalize">
                   {key.replace(/([A-Z])/g, ' $1').toLowerCase()}
                 </div>
-                  {key.replace(/([A-Z])/g, ' $1').toLowerCase()}
-                </div>
               </div>
               <TrendingUp className="w-8 h-8 text-green-500" />
             </div>
