@@ -6,7 +6,9 @@ import DatabaseDesigner from './components/DatabaseDesigner';
 import SecurityCenter from './components/SecurityCenter';
 import DeploymentCenter from './components/DeploymentCenter';
 import AnalyticsHub from './components/AnalyticsHub';
-import ComingSoon from './components/ComingSoon';
+import QualityLabs from './components/QualityLabs';
+import ProjectGalaxy from './components/ProjectGalaxy';
+import CommandCenter from './components/CommandCenter';
 import { projectStats } from './data/mockData';
 
 function App() {
@@ -27,13 +29,13 @@ function App() {
       case 'analytics':
         return <AnalyticsHub />;
       case 'testing':
-        return <ComingSoon title="Quality Labs" description="Comprehensive testing suite with AI-powered test generation and validation." />;
+        return <QualityLabs />;
       case 'projects':
-        return <ComingSoon title="Project Galaxy" description="Advanced project management with AI-assisted planning and resource optimization." />;
+        return <ProjectGalaxy />;
       case 'settings':
-        return <ComingSoon title="Command Center" description="System configuration and advanced settings for enterprise deployment." />;
+        return <CommandCenter />;
       default:
-        return <ComingSoon title={activeTab} />;
+        return <ChatInterface />;
     }
   };
 
